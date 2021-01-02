@@ -13,17 +13,14 @@ void setup() {
         pinMode(leds[i], OUTPUT);
     pinMode(BUZZER, OUTPUT);
     
-    //Turning on all the leds:
-    for(int i = 0; i < TOTAL_LEDS; i++)
+    //Turning on and off all the leds:
+    for(int i = 0; i < TOTAL_LEDS; i++){
         digitalWrite(leds[i], HIGH);
-
-    delay(1000);
-    
-    //Turning off all the leds:
-    for(int i = 0; i < TOTAL_LEDS; i++)
+        delay(350);
         digitalWrite(leds[i], LOW);
+    }
     
-    delay(1000);
+    delay(2000);
     
     //Playing the song "Jingle Bells":
     playSong();
