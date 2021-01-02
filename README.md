@@ -30,7 +30,7 @@ You can make your own nativity scene, using a shoe box, residue of sharpened pen
   playSong(void);
 ```
 * And in the loop function, all the leds are blinked.
-```
+```C++
   blinkAll(int delayTime);
 ```
 You can add new functions to blink the leds in different ways. There are many possibilities.
